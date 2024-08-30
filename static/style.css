@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    padding: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+}

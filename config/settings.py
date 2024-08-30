@@ -117,6 +117,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+# Nuevo para estaticos
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+    # En produccion se agrega la linea siguiente
+    # '/var/www/static',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
