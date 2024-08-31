@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 def home (request):
     #return HttpResponse("My personal Portfolio")
-    return render(request,'layouts/base.html',{})
+    return render(request,'core/index.html',{})
 def about(request):
     return HttpResponse(('Acerca de mi....Soy desarrollador web y programador'))
 

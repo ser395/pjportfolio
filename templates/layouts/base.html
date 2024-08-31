@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block styles %}{% endblock  %}
     
-    <title>Portfolio</title>
+    <title>{% block title %}{% endblock  %} </title>
 </head>
 <body>
     <nav>
@@ -19,7 +20,7 @@
         </ul>
     </nav>
     <main>
-
+        {% block content %}{% endblock  %}
 
     </main>
 
@@ -27,5 +28,6 @@
         <p>Todos los derechos reservados</p>
 
     </footer>
+    {% block scripts %}{% endblock  %}
 </body>
 </html>
